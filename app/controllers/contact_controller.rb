@@ -9,7 +9,7 @@ class ContactController < ApplicationController
     respond_to do |format|
       if @contact.deliver
         @contact = Contact.new
-        format.html { render 'index' }
+        format.html { render 'pages/welcome' }
         format.js { flash.now[:success] = @message = "Thank you for your message." }
       else
         format.html { render 'index' }

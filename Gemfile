@@ -33,6 +33,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'mail_form'
 gem 'dotenv-rails', groups: [:development, :test]
+gem "rmagick"
+gem "carrierwave"
+
 
 
 group :development, :test do
