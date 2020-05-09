@@ -1,7 +1,18 @@
-<h1>Posts</h1>
+<div class="d-flex flex-column bd-highlight mb-3">
 <% @posts.each do |post| %>
-  <div>
+    <div class="d-flex justify-content-center">
     <h2><%= post.name %></h2>
-    <%= simple_format post.body %>
-  </div>
+    </div>
+    <div class="d-flex justify-content-center">
+    <%= image_tag post.image, class: "post-image" if post.image.attached? %>
+    </div>
+    <div class="d-flex justify-content-center"">
+    <%= post.body %>
+    </div>
+    <% if current_user.try(:admin?) %>
+      <div class="d-flex justify-content-center">
+    <%= link_to "Add new Post", new_post_path %>
+      </div>
+    <% end %>
 <% end %>
+</div>
