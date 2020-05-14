@@ -1,18 +1,13 @@
-<div class="d-flex flex-column bd-highlight mb-3">
-<% @posts.each do |post| %>
-    <div class="d-flex justify-content-center">
-    <h2><%= post.name %></h2>
-    </div>
-    <div class="d-flex justify-content-center">
-    <%= image_tag post.image, class: "post-image" if post.image.attached? %>
-    </div>
-    <div class="d-flex justify-content-center"">
-    <%= post.body %>
-    </div>
+<div class="d-flex flex-column align-items-center posts">
+  <% @posts.each do |post| %>
+      <%= image_tag post.image, class: "post-image img-fluid" if post.image.attached? %>
+     <h1 class="post-name"><%= post.name %></h1>
+    <p class="post-body">
+    <%= post.body%>
+    </p>
     <% if current_user.try(:admin?) %>
-      <div class="d-flex justify-content-center">
-    <%= link_to "Add new Post", new_post_path %>
-      </div>
+        <%= link_to "Edit Post", edit_post_path(post) %>
+      <%= link_to "Delete Post",@post,  method: :delete %>
     <% end %>
-<% end %>
-</div>
+  <% end %>
+  </div>

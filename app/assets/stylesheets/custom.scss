@@ -1,8 +1,67 @@
 
-.post-image{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
-  height: 700px;
+html {
+  height: 100%
 }
+
+body {
+  height: 100%;
+  p{
+    font-family: 'Courier Prime', monospace;
+  }
+  h1{
+    font-family: 'Roboto', sans-serif;
+  }
+  h2{
+    font-family: 'Roboto', sans-serif;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+
+    .nav-link {
+      color: white !important;
+      font-size: 20px;
+
+      &:hover {
+        color: #578FDA !important;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+   background-color:transparent;
+    bottom: 0;
+    .social-share-button {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 20px;
+
+      .ssb-icon {
+        align-content: center;
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+      }
+
+      .ssb-facebook {
+        background-image: image-url("facebook.png");
+      }
+
+      .ssb-twitter {
+        background-image: image-url("twitter.png");
+      }
+
+      .ssb-linkedin {
+        background-image: image-url("linkedin.png");
+      }
+    }
+  }
+  }
+

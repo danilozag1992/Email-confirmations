@@ -10,10 +10,10 @@ class ContactController < ApplicationController
       if @contact.deliver
         @contact = Contact.new
         format.html { render 'pages/welcome' }
-        format.js { flash.now[:success] = @message = "Thank you for your message." }
+        format.js { flash.now[:notice] = @message = "Thank you for your message." }
       else
         format.html { render 'index' }
-        format.js { flash.now[:error] = @message = "Message did not send."}
+        format.js { flash.now[:alert] = @message = "Message did not send."}
       end
     end
   end

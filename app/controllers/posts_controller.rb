@@ -14,9 +14,24 @@ class PostsController < ApplicationController
       flash[:notice] = "Post created!"
       redirect_to root_path
     else
-      flash.now[:danger] = "Post failed to be created!"
+      flash.now[:alert] = "Post failed to be created!"
       render 'new'
     end
+  end
+  def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      flash[:notice] = "Post is Updated"
+    else
+      flash[:alert] = 'Post is not updated'
+    end
+  end
+  def edit
+  end
+  def destroy
+    @post.destroy
+    flash.now[:notice] = 'Practice is deleted'
+    redirect_to posts_path
   end
 
   private

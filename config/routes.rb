@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   root to: 'pages#welcome'
   resources :contact, only: [:index, :new, :create]
   resources :posts
+  get 'about', to: 'pages#about'
 end

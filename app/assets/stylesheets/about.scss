@@ -1,0 +1,120 @@
+$tablet-width: 768px;
+$desktop-width: 1024px;
+//MOBILE
+@media (min-width: 320px) and (max-width: 767px) {
+  .about {
+    background-attachment:fixed;
+    .d-flex.align-items-center.flex-column.about-container {
+      width: 100%;
+      .profile {
+        border-radius: 50%;
+        background-color: #70131F;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+
+        .me {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+
+      .about-text {
+        width: 97%;
+
+        .about-title {
+          font-size: 13px;
+        }
+
+        .about-par {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+  .d-flex.align-items-center.flex-column.about-container {
+    width: 100%;
+
+    .profile {
+      border-radius: 50%;
+      background-color: #70131F;
+
+      .me {
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+      }
+
+      .about-text {
+        width: 90%;
+
+        .about-title {
+          color: white;
+        }
+
+        .about-par {
+          color: white;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+//DEFAULT
+
+.about {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: no-repeat linear-gradient(to right, #1F2022, #AF091C);
+  height: 100%;
+  padding-top: 70px;
+
+  .about-container {
+    border-radius: 15px 15px;
+    transition: transform .2s;
+    width: 40%;
+    margin: 0 auto;
+
+    &:hover {
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -o-transform: scale(1.02);
+      transform: scale(1.02);
+      -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    }
+
+    .profile {
+      border-radius: 50%;
+      background-color: #70131F;
+
+      .me {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+      }
+    }
+
+    .about-text {
+      width: 90%;
+
+      .about-title {
+        color: white;
+      }
+
+      .about-par {
+        color: white;
+        font-size: 17px;
+      }
+    }
+  }
+}

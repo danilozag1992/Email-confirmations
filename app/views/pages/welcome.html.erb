@@ -1,6 +1,13 @@
-
-<main>
-  <p>Hi My name is Danilo Zagarcanin and i am Web Developer</p>
- <%= link_to "View my work", posts_path, class: "btn btn-primary" %>
+<main class="welcome container-fluid">
+<div class="welcome-content d-lg-flex flex-column align-items-center">
+  <div class="welcome-container">
+    <h2 class="welcome-text">Hi there!<br>
+    My name is Danilo Zagarčanin<br>
+    and I am a Web Developer.</h2>
+  <div>
+ <%= link_to "View my work", posts_path, class: "welcome-btn" %>
+  </div>
+  </div>
+</div>
 </main>
 <!-- Footer -->
