@@ -1,3 +1,4 @@
+<div class="edit-form">
 <% if current_user.try(:admin?) %>
   <%= form_with(model: @post, local: true) do |f| %>
     <div class="form-group">
@@ -12,3 +13,4 @@
     <%= f.submit "edit" %>
   <% end %>
 <% end %>
+</div>

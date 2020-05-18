@@ -29,8 +29,10 @@ class PostsController < ApplicationController
   def edit
   end
   def destroy
-    @post.destroy
-    flash.now[:notice] = 'Practice is deleted'
+    @post = Post.find(params[:id])
+    if @post.present?
+      @post.destroy
+    end
     redirect_to posts_path
   end
 

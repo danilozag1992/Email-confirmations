@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .posts {
-background: linear-gradient(to left, #1F2022, #AF091C);
-  height: 100%;
   padding-top: 100px;
   .post-image{
     width: 500px;
@@ -18,5 +16,8 @@ background: linear-gradient(to left, #1F2022, #AF091C);
   }
 }
 .post-form{
-  padding-top: 100px;
+  padding-top: 150px;
+}
+.edit-form{
+  padding-top: 150px;
 }

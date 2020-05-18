@@ -3,23 +3,8 @@ $desktop-width: 1024px;
 //MOBILE
 @media (min-width: 320px) and (max-width: 767px) {
   .about {
-    background-attachment:fixed;
     .d-flex.align-items-center.flex-column.about-container {
       width: 100%;
-      .profile {
-        border-radius: 50%;
-        background-color: #70131F;
-        position: absolute;
-        top: 30px;
-        right: 20px;
-
-        .me {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-        }
-      }
-
       .about-text {
         width: 97%;
 
@@ -69,19 +54,13 @@ $desktop-width: 1024px;
 //DEFAULT
 
 .about {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background: no-repeat linear-gradient(to right, #1F2022, #AF091C);
-  height: 100%;
   padding-top: 70px;
-
   .about-container {
     border-radius: 15px 15px;
     transition: transform .2s;
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
+    padding-top: 150px;
 
     &:hover {
       -webkit-transform: scale(1.02);
