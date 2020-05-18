@@ -267,7 +267,7 @@ DEPENDENCIES
   mail_form
   mini_magick (= 4.9.5)
   pg (>= 0.18, < 2.0)
-  puma (~> 4.1)
+  puma
   rails (~> 6.0.2, >= 6.0.2.2)
   rmagick
   sass-rails (>= 6)
