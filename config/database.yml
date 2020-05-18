@@ -84,6 +84,6 @@ encoding: unicode
 # For details on connection pooling, see Rails configuration guide
 # https://guides.rubyonrails.org/configuring.html#database-pooling
 pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-database: portfolio_development_production
-username: portfolio_development
-password: <%= ENV['PORTFOLIO_DEVELOPMENT_DATABASE_PASSWORD'] %>
+database: portfolio_production
+username: portfolio
+password: <%= ENV['PORTFOLIO_DATABASE_PASSWORD'] %>
