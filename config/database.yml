@@ -29,7 +29,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: portfolio
+  #username: mvp
 
   # The password associated with the postgres role (username).
   #password:
@@ -79,11 +79,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-adapter: postgresql
-encoding: unicode
-# For details on connection pooling, see Rails configuration guide
-# https://guides.rubyonrails.org/configuring.html#database-pooling
-pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-database: portfolio_production
-username: portfolio
-password: <%= ENV['PORTFOLIO_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: portfolio_production
+  username: portfolio
+  password: <%= ENV['PORTFOLIO_DATABASE_PASSWORD'] %>
