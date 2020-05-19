@@ -8,7 +8,7 @@
             and I am a Web Developer.</h1>
           <%= link_to "View my work", posts_path, class: "welcome-btn" %>
         </div>
-        <%= social_share_button_tag("My site", :url => "https://gentle-dusk-43712.herokuapp.com") %>
+        <%= social_share_button_tag(@post.name, :url => "https://gentle-dusk-43712.herokuapp.com") %>
       </div>
   </div>
   </div>
