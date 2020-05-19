@@ -7,10 +7,17 @@ class ContactController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
       if @contact.deliver
-        flash.now[:alert] = nil
+        flash[:notice] = "Successfully sent email!"
+        redirect_to root_path
       else
-        flash.now[:alert] = "Can not send message!"
+        flash.now[:alert] = "Can not send Message!"
         render 'new'
       end
-    end
   end
+
+  def message
+
+  end
+end
+
+
