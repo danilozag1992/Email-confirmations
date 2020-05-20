@@ -25,9 +25,9 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
-    config.logger = Portfolio::Logger.new(STDOUT)
+    config.logger = fathomless-anchorage-97470::Logger.new(STDOUT)
   else
-    config.logger = Portfolio::Logger.new(config.paths['log'].first)
+    config.logger = fathomless-anchorage-97470::Logger.new(config.paths['log'].first)
   end
 end
 
