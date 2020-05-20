@@ -25,11 +25,10 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
-    config.logger = fathomless-anchorage-97470::Logger.new(STDOUT)
-  else
-    config.logger = fathomless-anchorage-97470::Logger.new(config.paths['log'].first)
+    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger.formatter = config.log_formatter
+    config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
-end
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
