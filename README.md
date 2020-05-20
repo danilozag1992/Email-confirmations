@@ -3,7 +3,7 @@
 This is Ruby on the Rails portfolio project, part of the curriculum at [Microverse](https://www.microverse.org/). I built this portfolio in order to practice more on email confirmations.
 
 ## Link to live Demo
-[Live Portfolio](https://gentle-dusk-43712.herokuapp.com/)
+[Live Portfolio](https://fathomless-anchorage-97470.herokuapp.com/)
 
 ## Built With
 - Ruby 
