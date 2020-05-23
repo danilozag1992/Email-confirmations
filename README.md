@@ -22,12 +22,12 @@ This is Ruby on the Rails portfolio project, part of the curriculum at [Microver
 > Clone the repository to your local machine
 
 ```sh
-$ git clone https://github.com/danilozag1992/MVP.git
+$ git clone https://github.com/danilozag1992/PORTFOLIO.git
 ```
 > cd into the directory
 
 ```sh
-$ cd MVP
+$ cd PORTFOLIO
 ```
 ##### To create Database
 ```sh
